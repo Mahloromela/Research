@@ -8,7 +8,7 @@ def save_game_states(game_states, filename):
         # If the filename exists, append a suffix until a unique filename is found
         i = 1
         while True:
-            new_filename = rf"./Test/{filename}_{i}.json"
+            new_filename = rf"./Data/{filename}_{i}.json"
             if not os.path.exists(new_filename):
                 filename = new_filename
                 break
