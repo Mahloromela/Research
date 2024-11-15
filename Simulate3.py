@@ -11,7 +11,7 @@ import pygame
 from typing_extensions import TypedDict
 import statistics
 from datetime import datetime
-from Game2 import Game
+from Game import Game
 from Minimax import MinimaxAgent
 from Augmented_Minimax import AugmentMinimaxAgent5
 from NN_Minimmax import AugmentedMinimaxAgent
