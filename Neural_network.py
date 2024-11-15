@@ -197,11 +197,11 @@ class NNAgent:
 
 
 def save_model_with_unique_name(base_name):
-    file_name = rf'/home/vmuser/Pictures/Code/Morabaraba/Training5/Models_to_evaluate/{base_name}.keras'
+    file_name = rf'/Models/{base_name}.keras'
 
     if os.path.exists(file_name):
         timestamp = datetime.now().strftime('%Y%m%d_%H%M%S')
-        file_name = rf'/home/vmuser/Pictures/Code/Morabaraba/Training5/Models_to_evaluate/{base_name}_{timestamp}.keras'
+        file_name = rf'./Models/{base_name}_{timestamp}.keras'
 
     return file_name
     # print(f'Model saved as: {file_name}')
@@ -209,7 +209,7 @@ def save_model_with_unique_name(base_name):
 
 def load_most_recent_model(base_name):
     # Search for all model files that match the base name pattern
-    model_files = glob(rf'/home/vmuser/Pictures/Code/Morabaraba/Training5/Models_to_evaluate/{base_name}*.keras')
+    model_files = glob(rf'/Models/{base_name}*.keras')
 
     if not model_files:
         print(f"No models found with base name: {base_name}")
