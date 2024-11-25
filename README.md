@@ -82,17 +82,17 @@ This project investigates how AI techniques can replicate or enhance human-like 
 3. **Simulate Games**:
    Run matches between agents and collect data: and Trains 
    ```bash
-   python src/Simulate.py
+   python Simulate.py
    ```
 
 4. **Train Neural Network**:
    ```bash
-   python src/Training/Collect_Data.py
+   python Training/Collect_Data.py
    ```
 
 5. **Visualize Gameplay**:
    ```bash
-   python src/utils/Check_Performance.py
+   python Check_Performance.py
    ```
 
 ---
