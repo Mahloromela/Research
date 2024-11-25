@@ -1,16 +1,9 @@
-import copy
-
 import pygame
-from Monte_Carlo_Agent import MCTSAgent
-from Minimax import MinimaxAgent
-from Player import Player
-
-# from Morabaraba.Training3.Augmented_Minimax import AugmentMinimaxAgent3
-# from Morabaraba.Training4.Augmented_Minimax import AugmentMinimaxAgent4
-from Augmented_Minimax import AugmentMinimaxAgent5
-from NN_Minimmax import AugmentedMinimaxAgent
-
-from RandomAgent import RandomAgent
+from Algorithms.Monte_Carlo_Agent import MCTSAgent
+from Algorithms.Minimax import MinimaxAgent
+from Algorithms.Player import Player
+from Algorithms.Augmented_Minimax import AugmentMinimaxAgent5
+from Algorithms.RandomAgent import RandomAgent
 from Board import *
 
 # Initialize Pygame
@@ -21,7 +14,7 @@ pygame.display.set_caption('Morabaraba')
 
 
 class Game:
-    def __init__(self, player1=MinimaxAgent('X', max_depth=3), player2=RandomAgent('O')):
+    def __init__(self, player1=AugmentMinimaxAgent5('X'), player2=MinimaxAgent('O', max_depth=1)):
         self.game_over = False
         self.Board = Board()
         self.game_states = {1: [], 2: [], 3: [], 'Winner': ''}
@@ -36,6 +29,7 @@ class Game:
         self.removal_mode = False
         self.choose_mode = False
         self.free_positions = set(positions)
+        self.human = False
 
     def switch_player(self):
         if self.current_player == self.player1:
@@ -144,7 +138,7 @@ class Game:
                 if self.is_valid_move(from_row, from_col, row, col):
                     self.handle_movement(from_row, from_col, row, col)
                     delattr(self, 'selected_piece')
-                    # Record the   subprocess.run(["python3", r"/home/vmuser/Pictures/Code/Morabaraba/Training5/Fine_Tune.py"])move in history
+                    # Record the move in history
                     # self.current_player.move_history.append((row, col))
 
                 else:
@@ -265,8 +259,7 @@ class Game:
             if self.current_player == self.player1:
                 self.handle_move(row, col)
                 pygame.display.update()
-            Human = False
-            if self.current_player == self.player2 and not self.game_over and Human:
+            if self.current_player == self.player2 and not self.game_over and self.human:
                 self.ai_turn()
             else:
                 self.handle_move(row, col)

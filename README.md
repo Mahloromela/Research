@@ -1,3 +1,3 @@
 # Research
 
-The repo is stil being updted
+The repo is still being updated

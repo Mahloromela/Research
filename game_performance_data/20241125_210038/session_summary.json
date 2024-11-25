@@ -1,0 +1,29 @@
+{
+  "total_games": 1,
+  "player1_wins": 1,
+  "player2_wins": 0,
+  "draws": 0,
+  "avg_game_duration": 118.51588749885559,
+  "avg_moves_per_game": 45,
+  "metrics_history": [
+    {
+      "total_duration": 118.51588749885559,
+      "moves_count": 45,
+      "avg_decision_time": 0.00025533040364583335,
+      "max_decision_time": 0.0014600753784179688,
+      "unique_states_count": {
+        "1": 26,
+        "2": 16,
+        "3": 1
+      },
+      "stage_durations": {
+        "1": 0.008028745651245117,
+        "2": 0.003461122512817383,
+        "3": 0.0
+      },
+      "agent_total_duration": 0.0068721771240234375,
+      "agent_avg_decision_time": 0.00040424571317784926,
+      "agent_max_decision_time": 0.0014600753784179688
+    }
+  ]
+}

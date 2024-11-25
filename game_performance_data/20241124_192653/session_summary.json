@@ -1,0 +1,9 @@
+{
+  "total_games": 0,
+  "player1_wins": 0,
+  "player2_wins": 0,
+  "draws": 0,
+  "avg_game_duration": 0.0,
+  "avg_moves_per_game": 0.0,
+  "metrics_history": []
+}

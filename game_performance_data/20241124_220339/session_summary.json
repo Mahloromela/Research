@@ -1,0 +1,105 @@
+{
+  "total_games": 5,
+  "player1_wins": 2,
+  "player2_wins": 3,
+  "draws": 0,
+  "avg_game_duration": 216.49721994400025,
+  "avg_moves_per_game": 59,
+  "metrics_history": [
+    {
+      "total_duration": 154.31990432739258,
+      "moves_count": 39,
+      "avg_decision_time": 0.00021664912884051984,
+      "max_decision_time": 0.0014603137969970703,
+      "unique_states_count": {
+        "1": 12,
+        "2": 3,
+        "3": 4
+      },
+      "stage_durations": {
+        "1": 0.007457256317138672,
+        "2": 0.0009920597076416016,
+        "3": 0.0
+      },
+      "agent_total_duration": 0.005484342575073242,
+      "agent_avg_decision_time": 0.00039173875536237447,
+      "agent_max_decision_time": 0.0014603137969970703
+    },
+    {
+      "total_duration": 167.9776794910431,
+      "moves_count": 47,
+      "avg_decision_time": 0.00038757730037608046,
+      "max_decision_time": 0.001123189926147461,
+      "unique_states_count": {
+        "1": 18,
+        "2": 15,
+        "3": 3
+      },
+      "stage_durations": {
+        "1": 0.012124061584472656,
+        "2": 0.00409698486328125,
+        "3": 0.001995086669921875
+      },
+      "agent_total_duration": 0.008086442947387695,
+      "agent_avg_decision_time": 0.00044924683041042753,
+      "agent_max_decision_time": 0.0010471343994140625
+    },
+    {
+      "total_duration": 323.7876133918762,
+      "moves_count": 97,
+      "avg_decision_time": 0.00029720719327631684,
+      "max_decision_time": 0.0016112327575683594,
+      "unique_states_count": {
+        "1": 26,
+        "2": 53,
+        "3": 16
+      },
+      "stage_durations": {
+        "1": 0.006549358367919922,
+        "2": 0.013691186904907227,
+        "3": 0.008588552474975586
+      },
+      "agent_total_duration": 0.013811349868774414,
+      "agent_avg_decision_time": 0.0002605915069580078,
+      "agent_max_decision_time": 0.0016112327575683594
+    },
+    {
+      "total_duration": 251.85056233406067,
+      "moves_count": 71,
+      "avg_decision_time": 0.00028537696516010125,
+      "max_decision_time": 0.0020411014556884766,
+      "unique_states_count": {
+        "1": 27,
+        "2": 35,
+        "3": 8
+      },
+      "stage_durations": {
+        "1": 0.007707357406616211,
+        "2": 0.011542797088623047,
+        "3": 0.0010116100311279297
+      },
+      "agent_total_duration": 0.012113571166992188,
+      "agent_avg_decision_time": 0.0003028392791748047,
+      "agent_max_decision_time": 0.0020411014556884766
+    },
+    {
+      "total_duration": 184.55034017562866,
+      "moves_count": 41,
+      "avg_decision_time": 0.0002524561998320789,
+      "max_decision_time": 0.0015075206756591797,
+      "unique_states_count": {
+        "1": 16,
+        "2": 8,
+        "3": 3
+      },
+      "stage_durations": {
+        "1": 0.006657838821411133,
+        "2": 0.0036928653717041016,
+        "3": 0.0
+      },
+      "agent_total_duration": 0.005296468734741211,
+      "agent_avg_decision_time": 0.0002206861972808838,
+      "agent_max_decision_time": 0.001186370849609375
+    }
+  ]
+}
