@@ -128,5 +128,3 @@ Special thanks to:
 This project is licensed under the [MIT License](LICENSE).
 
 ---
-
-Feel free to modify this template to align with your preferences or additional project details.
