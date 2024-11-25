@@ -1,5 +1,4 @@
 ---
-
 # Morabaraba AI Agents
 
 This repository contains the implementation of Artificial Intelligence (AI) agents for **Morabaraba**, a traditional African board game. Developed as part of an Honours Research Project in Computer Science and Applied Mathematics at Wits University, the project explores multiple AI approaches, including:
