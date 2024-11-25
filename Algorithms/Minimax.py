@@ -1,4 +1,3 @@
-import copy
 import random
 from Research.Board import positions, adjacent_points, mills
 from Research.Algorithms.Player import Player

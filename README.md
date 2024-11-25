@@ -20,6 +20,8 @@ The aim is to develop AI agents capable of playing Morabaraba with strategic pro
 - [Acknowledgements](#acknowledgements)
 - [License](#license)
 
+ `README.md`
+
 ---
 
 ## Background
@@ -47,23 +49,18 @@ This project investigates how AI techniques can replicate or enhance human-like 
 ## Project Structure
 ```
 ├── src
-│   ├── game_environment.py   # Core Morabaraba game logic
-│   ├── agents
-│   │   ├── random_agent.py   # Random move generator
-│   │   ├── mcts_agent.py     # Monte Carlo Tree Search implementation
-│   │   ├── minimax_agent.py  # Minimax algorithm with alpha-beta pruning
-│   │   └── nn_agent.py       # Neural network agent with attention mechanisms
+│   ├── Game.py   # Core Morabaraba game logic
+│   ├── Algorithms
+│   │   ├── Random_Agent.py   # Random move generator
+│   │   ├── Monte_Carlo_Agent.py     # Monte Carlo Tree Search implementation
+│   │   ├── Minimax.py  # Minimax algorithm with alpha-beta pruning
+│   │   └── Augmented_Minimax.py       # Neural network agent with attention mechanisms
 │   └── utils
-│       ├── feature_engineering.py # Feature extraction for training
-│       ├── data_preprocessing.py  # Data cleaning and normalization
-│       └── visualization.py       # Game state visualization with Pygame
-├── data
-│   ├── generated_data/       # Game states and results from simulations
-│   └── trained_models/       # Saved neural network models
-├── notebooks
-│   └── exploratory_analysis.ipynb # Neural network training analysis
-├── results
-│   ├── evaluation_metrics.csv # AI agent performance summaries
+│       ├── Preprocessing.py  # Data cleaning and normalization
+│       └── Check_Performance.py       # Game state visualization with Pygame
+├── Models # Saved neural network models
+├── Data   # Game states and results from simulations     
+├── game_performance_data # AI agent performance summaries
 ├── README.md
 └── requirements.txt
 ```
@@ -83,19 +80,19 @@ This project investigates how AI techniques can replicate or enhance human-like 
    ```
 
 3. **Simulate Games**:
-   Run matches between agents and collect data:
+   Run matches between agents and collect data: and Trains 
    ```bash
-   python src/game_environment.py
+   python src/Simulate.py
    ```
 
 4. **Train Neural Network**:
    ```bash
-   python src/agents/nn_agent.py --train
+   python src/Training/Collect_Data.py
    ```
 
 5. **Visualize Gameplay**:
    ```bash
-   python src/utils/visualization.py
+   python src/utils/Check_Performance.py
    ```
 
 ---
