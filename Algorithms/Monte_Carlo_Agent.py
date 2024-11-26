@@ -2,8 +2,8 @@ import math
 import random
 import time
 
-from Research.Board import adjacent_points
-from Research.Algorithms.Player import Player
+from Board import adjacent_points
+from Algorithms.Player import Player
 
 
 class MCTSTreeNode:

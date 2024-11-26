@@ -14,7 +14,7 @@ import tensorflow as tf
 from sklearn.model_selection import train_test_split
 
 from keras.callbacks import Callback, ModelCheckpoint
-from tensorflow.python.keras.regularizers import l1
+from tensorflow.keras.regularizers import l1
 
 
 class MonitorWeightsCallback(Callback):

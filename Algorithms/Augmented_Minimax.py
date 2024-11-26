@@ -1,23 +1,23 @@
 import random
 import time
 from typing import Dict, Tuple
-from Research.Board import *
+from Board import *
 import numpy as np
 from sklearn.preprocessing import StandardScaler
 
-from Research.Preprocessing import count_mills
+from Preprocessing import count_mills
 
-from Research.Board import positions
+from Board import positions
 
 central_positions = [(1, 1), (1, 3), (1, 5), (2, 2), (2, 3), (2, 4), (3, 1), (3, 2), (3, 4), (3, 5), (4, 2), (4, 3),
                      (4, 4), (5, 1), (5, 3), (5, 5)]
-from Research.Algorithms.Player import Player
-from Research.Algorithms.Neural_network import NNAgent, load_most_recent_model
+from Algorithms.Player import Player
+from Algorithms.Neural_network import NNAgent, load_most_recent_model
 
 scaler = StandardScaler()
 
 
-class AugmentMinimaxAgent5(Player):
+class AugmentMinimaxAgent(Player):
     def __init__(self, piece, max_depth=1, time_limit=15):
         super().__init__(piece)
         self.piece = piece

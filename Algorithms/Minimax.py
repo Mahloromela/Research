@@ -1,6 +1,6 @@
 import random
-from Research.Board import positions, adjacent_points, mills
-from Research.Algorithms.Player import Player
+from Board import positions, adjacent_points, mills
+from Algorithms.Player import Player
 
 
 class MinimaxAgent(Player):

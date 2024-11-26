@@ -2,7 +2,7 @@ import pygame
 from Algorithms.Monte_Carlo_Agent import MCTSAgent
 from Algorithms.Minimax import MinimaxAgent
 from Algorithms.Player import Player
-from Algorithms.Augmented_Minimax import AugmentMinimaxAgent5
+from Algorithms.Augmented_Minimax import AugmentMinimaxAgent
 from Algorithms.RandomAgent import RandomAgent
 from Board import *
 
@@ -14,7 +14,7 @@ pygame.display.set_caption('Morabaraba')
 
 
 class Game:
-    def __init__(self, player1=AugmentMinimaxAgent5('X'), player2=MinimaxAgent('O', max_depth=1)):
+    def __init__(self, player1=AugmentMinimaxAgent('X'), player2=MinimaxAgent('O', max_depth=1)):
         self.game_over = False
         self.Board = Board()
         self.game_states = {1: [], 2: [], 3: [], 'Winner': ''}
@@ -167,7 +167,7 @@ class Game:
         if self.current_player.pieces_usable < 3 and self.current_player.opp.pieces_usable > 2:
             self.game_over = True
             return self.current_player.opp.piece
-        elif self.current_player.pieces_usable > 3 and self.current_player.opp.pieces_usable < 2:
+        elif self.current_player.pieces_usable > 3 and self.current_player.opp.pieces_usable <= 2:
             self.game_over = True
             return self.current_player.piece
 
@@ -246,9 +246,9 @@ class Game:
         text = f"Player {self.current_player.piece}'s turn"
         if self.removal_mode:
             text += " - Remove opponent's piece"
-            if self.current_player == self.player2:
-                move = self.player2.make_move(self)
-                self.handle_click(move[0], move[1])
+            # if self.current_player == self.player2:
+            #     move = self.player2.make_move(self)
+            #     self.handle_click(move[0], move[1])
         text_surface = font.render(text, True, (0, 0, 0))
         screen.blit(text_surface, (30, HEIGHT - 10))
 
@@ -259,8 +259,8 @@ class Game:
             if self.current_player == self.player1:
                 self.handle_move(row, col)
                 pygame.display.update()
-            if self.current_player == self.player2 and not self.game_over and self.human:
-                self.ai_turn()
+            # if self.current_player == self.player2 and not self.game_over and self.human:
+            #     self.ai_turn()
             else:
                 self.handle_move(row, col)
                 pygame.display.update()

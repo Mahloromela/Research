@@ -46,7 +46,7 @@ class GameSimulator:
         """
         try:
             for i in range(self.num_games):
-                game_instance = Game(player1=AugmentedMinimaxAgent('O', max_depth=1), player2=MinimaxAgent('X', max_depth=2))  # Initialize game
+                game_instance = Game(player1=AugmentMinimaxAgent('O', max_depth=1), player2=MinimaxAgent('X', max_depth=2))  # Initialize game
                 winner = self.play_game(game_instance)
                 game_instance.reset()
                 # Update win/loss counters based on the winner

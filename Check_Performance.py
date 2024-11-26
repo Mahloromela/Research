@@ -339,7 +339,7 @@ class GameSimulator:
             for i in range(self.num_games):
                 logging.info(f"Starting game {i + 1}/{self.num_games}")
 
-                game_instance = Game(player1=AugmentMinimaxAgent5('X', max_depth=1),
+                game_instance = Game(player1=AugmentMinimaxAgent('X', max_depth=1),
                                      player2=MinimaxAgent('O', max_depth=1))
                 winner = self.play_game(game_instance, i + 1)
 

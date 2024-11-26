@@ -1,130 +1,139 @@
+# 🎲 Morabaraba AI Agents 🤖
 
-# Morabaraba AI Agents
+## 🌍 Overview
 
-This repository contains the implementation of Artificial Intelligence (AI) agents for **Morabaraba**, a traditional African board game. Developed as part of an Honours Research Project in Computer Science and Applied Mathematics at Wits University, the project explores multiple AI approaches, including:
+Welcome to an exciting exploration of **Morabaraba**, a traditional African board game reimagined through cutting-edge Artificial Intelligence! 🚀
 
-- **Monte Carlo Tree Search (MCTS)**
-- **Minimax Tree Search**
-- **Neural Networks**
+Developed as an Honours Research Project at Wits University, this project brings together **Computer Science**, **Applied Mathematics**, and **Cultural Heritage** in a unique technological journey.
 
-The aim is to develop AI agents capable of playing Morabaraba with strategic proficiency, preserving the cultural significance of the game while advancing AI research in traditional board games.
+## 🎯 About Morabaraba
 
+**Morabaraba** (aka Umlabalaba or Twelve Men's Morris) is more than just a game - it's a strategic masterpiece 🏆 deeply rooted in African cultural traditions. Played on a grid of 24 points, players engage in a thrilling dance of strategy, placing, moving, and capturing pieces to form "mills".
 
-## Table of Contents
-- [Background](#background)
-- [Features](#features)
-- [Project Structure](#project-structure)
-- [How to Run](#how-to-run)
-- [Results](#results)
-- [Future Work](#future-work)
-- [Acknowledgements](#acknowledgements)
-- [License](#license)
+## 🧠 Research Approaches
 
- `README.md`
+Our AI investigates game intelligence through:
 
----
+- 🌐 **Monte Carlo Tree Search (MCTS)**
+- 📊 **Minimax Tree Search with Alpha-Beta Pruning**
+- 🤖 **Neural Networks with Attention Mechanisms**
 
-## Background
-**Morabaraba**, also known as Umlabalaba or Twelve Men's Morris, is a traditional African strategy board game. Played on a grid of 24 points, the game involves strategic placement, movement, and removal of pieces to form "mills" (three aligned pieces).
+## ✨ Key Features
 
-This project investigates how AI techniques can replicate or enhance human-like gameplay through:
-- **Monte Carlo simulations**
-- **Tree-based search algorithms**
-- **Learning-based neural networks**
+### 🎮 Game Environment
+- 🏁 Full Morabaraba game rules implementation
+- 🔄 Supports all game phases:
+    - 🥇 Piece Placement
+    - 🚶 Piece Movement
+    - 🦘 Jumping Phase
 
----
+### 🤹 AI Agents
+1. 🎲 **Random Agent**: Baseline control
+2. 🌳 **MCTS Agent**: Exploration meets exploitation
+3. 🧩 **Minimax Agent**: Strategic tree search
+4. 🧠 **Neural Network Agent**: Machine learning magic
 
-## Features
-- **Custom Game Environment**: Implements Morabaraba game rules and phases (placement, movement, and jumping).
-- **AI Agents**:
-    - **Random Agent**: Baseline control agent.
-    - **MCTS Agent**: Combines exploration and exploitation for decision-making.
-    - **Minimax Agent**: Uses alpha-beta pruning for strategic depth.
-    - **Neural Network Agent**: Employs attention mechanisms for nuanced decision-making.
-- **Simulation and Data Collection**: Automated games generate data for training and evaluation.
-- **Feature Engineering**: Extracts strategic metrics like mills, mobility, and configuration advantages for neural network training.
+### 🔬 Advanced Capabilities
+- 🤖 Automated game simulation
+- 📊 Data collection and preprocessing
+- 🎯 Strategic feature engineering
+- 📈 Performance visualization
 
----
+## 📂 Project Structure
 
-## Project Structure
 ```
-├── src
-│   ├── Game.py   # Core Morabaraba game logic
-│   ├── Algorithms
-│   │   ├── Random_Agent.py   # Random move generator
-│   │   ├── Monte_Carlo_Agent.py     # Monte Carlo Tree Search implementation
-│   │   ├── Minimax.py  # Minimax algorithm with alpha-beta pruning
-│   │   └── Augmented_Minimax.py       # Neural network agent with attention mechanisms
-│   └── utils
-│       ├── Preprocessing.py  # Data cleaning and normalization
-│       └── Check_Performance.py       # Game state visualization with Pygame
-├── Models # Saved neural network models
-├── Data   # Game states and results from simulations     
-├── game_performance_data # AI agent performance summaries
-├── README.md
+Research/ 🗂️
+│
+├── src/ 💻
+│   ├── Game.py               # Core game logic
+│   ├── Algorithms/ 🧮
+│   │   ├── Random_Agent.py
+│   │   ├── Monte_Carlo_Agent.py
+│   │   ├── Minimax.py
+│   │   └── Augmented_Minimax.py
+│   └── utils/ 🛠️
+│       ├── Preprocessing.py
+│       └── Check_Performance.py
+│
+├── Models/ 🤖         # Saved neural network models
+├── Data/ 📊           # Simulation game states
+├── game_performance_data/ 📈  # AI agent performance
 └── requirements.txt
 ```
 
----
+## 📊 Performance Results
 
-## How to Run
-1. **Clone the Repository**:
+Our AI agents' battle results! 💥
+
+| Agent 🤖          | Wins vs Random 🎲 | Wins vs MCTS 🌐 | Wins vs Minimax 🧩 |
+|------------------|------------------|----------------|-------------------|
+| Neural Network 🧠 | 30 🏆            | 18 🥈           | 15 🥉              |
+| MCTS 🌳           | 30 🏆            | -              | 16 🥈              |
+| Minimax 📊        | 30 🏆            | 12 🥉           | -                 |
+
+## 🚀 Getting Started
+
+### 📋 Prerequisites
+- 🐍 Python 3.8+
+- 📦 pip package manager
+
+### 🔧 Installation
+1. Clone the repository
    ```bash
    git clone https://github.com/Mahloromela/Research.git
    cd Research
    ```
 
-2. **Install Dependencies**:
+2. Install dependencies
    ```bash
    pip install -r requirements.txt
    ```
 
-3. **Simulate Games**:
-   Run matches between agents and collect data: and Trains 
-   ```bash
-   python Simulate.py
-   ```
+### 🎮 Running the Project
 
-4. **Train Neural Network**:
-   ```bash
-   python Training/Collect_Data.py
-   ```
+#### 🎲 Simulate Games
+```bash
+python Simulate.py
+```
 
-5. **Visualize Gameplay**:
-   ```bash
-   python Check_Performance.py
-   ```
+#### 🧠 Train Neural Network
+```bash
+python Training/Collect_Data.py
+```
 
----
+#### 👀 Visualize Gameplay
+```bash
+# Check AI game performance
+python Check_Performance.py
 
-## Results
-The AI agents were tested across multiple training iterations with the following outcomes:
+# Play against AI or another human
+python Human_vs_AI.py
+```
 
-| Agent          | Wins Against Random | Wins Against MCTS | Wins Against Minimax |
-|----------------|---------------------|-------------------|-----------------------|
-| Neural Network | 30                 | 18                | 15                    |
-| MCTS           | 30                 | -                 | 16                    |
-| Minimax        | 30                 | 12                | -                     |
+## 🗺️ Roadmap and Future Work
 
-Neural networks displayed strong performance after training but showed room for improvement against Monte Carlo and Minimax agents.
+- 🔄 Implement reinforcement learning for self-play
+- 🧩 Enhance training data with edge-case scenarios
+- 🚀 Optimize simulation performance
+- 🤖 Develop sophisticated neural network architectures
 
----
+## 🤝 Contributing
 
-## Future Work
-- **Reinforcement Learning**: Implement self-play for neural network agents to improve adaptability.
-- **Enhanced Training Data**: Include edge-case scenarios for better generalization.
-- **Optimization**: Parallel processing and efficient state copying for faster simulations.
-
----
-
-## Acknowledgements
-Special thanks to:
-- **Professor Clint Van Alten** for supervision and guidance.
-- **Wits University** for providing the resources to conduct this research.
-
----
+Contributions are welcome! 🌟 Check out our [issues page](https://github.com/Mahloromela/Research/issues).
 
 ## License
-This project is licensed under the [MIT License](LICENSE).
+This project is licensed under the [MIT License](LICENSE.txt).
+## 🙏 Acknowledgements
+Special thanks to:
+- 👨‍🏫 **Professor Clint Van Alten**: Project supervision
+- 🏫 **Wits University**: Research support
 
----
+## 📜 License
+
+MIT Licensed 🆓 - See [LICENSE.txt](LICENSE.txt) for details.
+
+## 📞 Contact
+
+Got questions? 🤔 Reach out to the project maintainers!
+
+**Made with 🧠 at Wits University**

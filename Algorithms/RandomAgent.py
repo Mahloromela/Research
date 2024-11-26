@@ -1,8 +1,8 @@
 import random
 
-from Research.Board import *
+from Board import *
 
-from Research.Algorithms.Player import Player
+from Algorithms.Player import Player
 
 
 class RandomAgent(Player):
