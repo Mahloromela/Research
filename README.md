@@ -8,7 +8,7 @@ Developed as an Honours Research Project at Wits University, this project brings
 
 ## 🎯 About Morabaraba
 
-**Morabaraba** (aka Umlabalaba or Twelve Men's Morris) is more than just a game - it's a strategic masterpiece 🏆 deeply rooted in African cultural traditions. Played on a grid of 24 points, players engage in a thrilling dance of strategy, placing, moving, and capturing pieces to form "mills".
+**Morabaraba** (aka Umlabalaba or Twelve Men's Morris) is more than just a game - it's a strategic masterpiece 🏆 deeply rooted in African cultural traditions. Played on a grid of 24 points, players engage in a thrilling dance of strategy, placing, moving, and forming "mills" to capture pieces.
 
 ## 🧠 Research Approaches
 
