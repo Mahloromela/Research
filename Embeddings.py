@@ -495,9 +495,6 @@ def get_feature_importance(model, X_input):
     return feature_importance.numpy()
 
 
-# Example usage:
-# Assuming `X_placement` is your input data for placement stage
-
 
 def plot(filename, non_position_features, position_features):
     # Plot non-position feature importance
