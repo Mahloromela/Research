@@ -5,7 +5,7 @@ from glob import glob
 
 import numpy as np
 from sklearn.metrics import mean_squared_error, mean_absolute_error
-from tensorflow.keras.utils import to_categorical  # Correct import path
+from tensorflow.keras.utils import to_categorical 
 from Board import mills, adjacent_points
 import tensorflow as tf
 from tensorflow.keras import layers, models
