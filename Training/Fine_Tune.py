@@ -20,8 +20,6 @@ from Research.Preprocessing import MorabarabaDataProcessor
 os.environ["CUDA_VISIBLE_DEVICES"] = "-1"
 
 
-# [Include all corrected functions and the MorabarabaDataProcessor class here]
-
 
 def reshape_for_conv2d(X_data, board_size):
     return np.array(X_data).reshape(-1, 33, 1)
